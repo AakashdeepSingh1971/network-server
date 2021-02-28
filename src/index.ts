@@ -3,7 +3,7 @@ import * as http from 'http';
 import * as path from 'path';
 
 const app = express();
-let port = process.env.PORT || 25565;
+let port = process.env.PORT || 3000;
 let httpServer = http.createServer(app);
 
 app.use(express.static(path.join(__dirname, '../build')));
